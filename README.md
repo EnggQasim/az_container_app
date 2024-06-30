@@ -135,3 +135,7 @@ docker run -d -p 8000:8000 my-prod-image-optimized
 Additional References:
 
 https://www.jeffastor.com/blog/testing-fastapi-endpoints-with-docker-and-pytest/
+
+## deploy with CICD
+
+`az ad sp create-for-rbac --name "myServicePrincipal" --role contributor --scopes /subscriptions/06ddb3b9-90ba-4e1b-9e0e-1190ba64ff07 --sdk-auth`
