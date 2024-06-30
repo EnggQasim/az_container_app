@@ -22,7 +22,8 @@ jobs:
 
       - name: Build and push Docker image
         run: |
-          docker build --no-cache -t ${{ secrets.DOCKER_HUB_USERNAME }}/myapp:latest .
+          docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/myapp:latest .
+          
           docker push ${{ secrets.DOCKER_HUB_USERNAME }}/myapp:latest
 
       - name: Azure Login
